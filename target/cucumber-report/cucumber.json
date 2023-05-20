@@ -1,0 +1,205 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6838690400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Buy One Product",
+        "description": "",
+        "id": "end-to-end-functionality;buy-one-product",
+        "after": [
+          {
+            "result": {
+              "duration": 1016386100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 413505100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the home page",
+            "match": {
+              "location": "HomeSteps.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 749839900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on the register",
+            "match": {
+              "location": "HomeSteps.i_click_on_the_register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1108977400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter following details to register",
+            "match": {
+              "location": "RegistrationSteps.i_enter_following_details_to_register(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "gender",
+                  "firstName",
+                  "lastName",
+                  "email",
+                  "password",
+                  "confirmPassword"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "female",
+                  "moly",
+                  "patel",
+                  "patelmoly@gmail.com",
+                  "106@494",
+                  "106@494"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2199989900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on Register Button",
+            "match": {
+              "location": "RegistrationSteps.i_click_on_Register_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1203487300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on \"jewelry\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jewelry",
+                  "offset": 12
+                }
+              ],
+              "location": "RegistrationSteps.iClickOn(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3684439600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on ADD TO CART button for Flower Girl Bracelet",
+            "match": {
+              "location": "JewelerySteps.iClickOnADDTOCARTButtonForFlowerGirlBracelet()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 555134600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on shopping cart",
+            "match": {
+              "location": "JewelerySteps.i_click_on_shopping_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15115837100,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#checkout_attribute_1\"}\n  (Session info: chrome\u003d102.0.5005.63)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027JAYPATIL\u0027, ip: \u0027192.168.0.33\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_321\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\patil\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63893}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 22fd89048054a43a875734950ee5f3e3\n*** Element info: {Using\u003did, value\u003dcheckout_attribute_1}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat com.nopcommerce.page.ShoppingCartPage.selectGiftWrapping(ShoppingCartPage.java:23)\r\n\tat com.nopcommerce.step_definition.ShoppingCartSteps.i_select_for_Gift_Wrapping(ShoppingCartSteps.java:12)\r\n\tat ✽.And I select \"Yes\" for Gift Wrapping(endToEnd.feature:17)\r\n",
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "I select \"Yes\" for Gift Wrapping",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 10
+                }
+              ],
+              "location": "ShoppingCartSteps.i_select_for_Gift_Wrapping(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I select terms and conditions",
+            "match": {
+              "location": "ShoppingCartSteps.i_select_terms_and_conditions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I click on checkout button",
+            "match": {
+              "location": "ShoppingCartSteps.i_click_on_checkout_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@EndToEnd"
+          }
+        ]
+      }
+    ],
+    "name": "End to End Functionality",
+    "description": "As a user\r\nI want to register\r\nSo I can buy products",
+    "id": "end-to-end-functionality",
+    "keyword": "Feature",
+    "uri": "endToEnd.feature"
+  }
+]
